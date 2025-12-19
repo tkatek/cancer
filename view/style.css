@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&family=BBH+Hegarty&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: white;
+    color: black;
+         font-family: BBH Hegarty;
+
+
+}
+.nav{
+    height: 10vh;
+    position: fixed;
+    width: 100%;
+  /* background-color: rgba(255, 255, 255, 0.104); */
+      display: flex;
+    justify-content: right;
+     /* backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);  */
+    align-items: center;
+    gap: 120px;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  */
+}
+.nav ul{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 100px;
+ list-style: none;
+ font-size: 20px;
+
+}
+
+.nav li{
+    position: relative;
+    padding-bottom: 3px;
+    cursor: pointer;
+     font-family: BBH Hegarty;
+     color: white;
+          letter-spacing: 1px;
+
+}
+
+.nav li::before{
+    content: '';
+    position: absolute;
+    height: 0px;
+    width: 100%;
+    bottom: 0;
+    left: -50%;
+        transition: 0.5s ease;
+
+    background-color: rgb(255, 255, 255);
+
+}
+.nav li:hover::before{
+        left: 0;
+            height: 1px;
+
+
+
+
+}
+.nav img{
+    height: 100%;
+}
+.nav button{
+    padding: 9px 30px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 15px;
+         font-family: BBH Hegarty;
+
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;
+  
+    background-image: url(../media/child-having-medical-checkup.jpg);
+    background-position: center;
+    background-size: cover;
+  
+}
+.subtitel{
+    height: 100%;
+    width: 80%;
+    background-image: url(/media/darckblue.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    font-family: BBH Hegarty;
+    padding-left: 30px;
+    font-size: 40px;
+    color: white;
+    text-shadow: black 5px 5px 0px;
+    letter-spacing: 3px;
+}
+.btns{
+    height: 100px;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.minisub{
+    font-size: 15px;
+    font-family: popping;
+    text-shadow: none;
+}
+
+.sty{
+   width: 400px; /* يمكنك تغيير الحجم حسب رغبتك */
+  height: 250px;
+  background-color: #1e5678; /* لون الخلفية */
+  border: 2px solid #000;
+  clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 100%);
+}
+
+
+
+/* From Uiverse.io by TISEPSE */ 
+.btn2 {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  border: 2px solid #fefefe;
+  text-transform: uppercase;
+  color: #fefefe;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  transition: 0.3s;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn2::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 6px);
+  height: calc(100% + 2px);
+  background-color: #046eaf;
+  transition: 0.3s ease-out;
+  transform: scaleY(1);
+}
+
+.btn2::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% - 50px);
+  background-color: #212121;
+  transition: 0.3s ease-out;
+  transform: scaleY(1);
+}
+
+.btn2:hover::before {
+  transform: translateY(-25px);
+  height: 0;
+}
+
+.btn2:hover::after {
+  transform: scaleX(0);
+  transition-delay: 0.15s;
+}
+
+.btn2:hover {
+  border: 2px solid #fefefe;
+}
+
+.btn2 .spn2 {
+  position: relative;
+  z-index: 3;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+}
+
+
+
+
+.btn3 {
+  position: relative;
+  display: inline-block;
+  padding: 15px 70px;
+  border: 2px solid #fefefe;
+  text-transform: uppercase;
+  color: #fefefe;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  transition: 0.3s;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn3::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 6px);
+  height: calc(100% + 2px);
+  background-color: #2a56a9;
+  transition: 0.3s ease-out;
+  transform: scaleY(1);
+}
+
+.btn3::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% - 50px);
+  background-color: #212121;
+  transition: 0.3s ease-out;
+  transform: scaleY(1);
+}
+
+.btn3:hover::before {
+  transform: translateY(-25px);
+  height: 0;
+}
+
+.btn3:hover::after {
+  transform: scaleX(0);
+  transition-delay: 0.15s;
+}
+
+.btn3:hover {
+  border: 2px solid #fefefe;
+}
+
+.btn3 .spn2 {
+  position: relative;
+  z-index: 3;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+}
+
+.minisub2{
+     font-size: 15px;
+    font-family: popping;
+    text-shadow: none;
+        font-family: BBH Hegarty;
+            letter-spacing: 1px;
+
+
+}
+.minisub2 span{
+    font-size: 20px;
+    font-family: BBH Hegarty;
+}
+
+.arrow{
+    height: 40px;
+}
+.about{
+    height: 100vh;
+    width: 100%;
+}
+.abt1{
+    height: 100vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+flex-direction: column;
+}
+.abt2{
+      height: 100vh;
+        background-color: rgb(89, 0, 255);
+}
+
+.one {
+    height: 33%;
+    width: 100%;
+    color:#1e5678;
+     text-shadow: rgb(54, 54, 54) 5px 5px 0px;
+    letter-spacing: 4px;
+        font-family: BBH Hegarty;
+font-size: 120px;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.two{
+     height: 33%;
+    width: 100%;
+    background-color: #ffffff;
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+.tree{
+     height: 33%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sun{
+    position: absolute;
+    height: 80px;
+    bottom: 0;
+    left: 30px;
+}
+.two p {
+    border-right: solid #222 1px;
+    padding-right: 100px ;
+    letter-spacing: 1px;
+}
+.quote{
+    height: 60px;
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+.one span{
+    color: #046eaf;
+}
+.photos{
+    height: 100%;
+    width: 70%;
+    background-image: url(/media/copy-space-childrens-with-book-their-heads.jpg);
+    background-size: cover;
+}
+.side{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    letter-spacing: 1px;
+}
+.side button{
+    height: 40px;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+     font-family: BBH Hegarty;
+            letter-spacing: 1px;
+            border: none;
+            background-color: #046eaf;
+            box-shadow: #222 3px 3px 0px;
+            transition: 0.5s;
+}
+
+.side button:hover{
+    background-color: #0a81cb;
+    gap: 8px;
+}
+.side button:active{
+                box-shadow: #222 0px 0px 0px;
+
+}
