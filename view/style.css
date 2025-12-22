@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&family=BBH+Hegarty&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&family=BBH+Hegarty&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&family=BBH+Hegarty&family=Bebas+Neue&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
 *{
     padding: 0;
@@ -12,6 +13,8 @@ body{
     background-color: whitesmoke;
     color: black;
          font-family: BBH Hegarty;
+           /* font-family:Bebas Neue ; */
+
 
 
 }
@@ -696,7 +699,7 @@ display: flex;
   font-size: 17px;
   box-shadow: #22222253 5px 5px 3px;
 
-  border: solid 0.5px rgba(0, 0, 0, 0.593) ;
+  border: solid 0.5px rgba(0, 0, 0, 0.248) ;
   border-left: none;
 }
 
@@ -726,4 +729,55 @@ display: flex;
   display: flex;
   justify-content:  center;
   align-items: center;
+}
+  /* Bebas Neue */
+
+.ourvesion{
+  height: 100vh;
+    font-family:Bebas Neue ;
+
+
+}
+.headlin{
+  height: 20%;
+  width: 100%;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  font-family:Bebas Neue ;
+}
+
+.bothe{
+height: 50%;
+width: 100%;
+background-color: yellow;
+
+
+}
+.right{
+  height: 100%;
+  width: 50%;
+  background-color: beige;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.titels{
+  height: 100%;
+  width: 80%;
+  background-color: #2a56a9;
+}
+.range{
+  height: 80%;
+  width: 4px;
+  background-color: #979797;
+  border-radius: 20px;
+}
+.in{
+  height: 70%;
+  width: 120%;
+  background-color: #046dafb5;
+  border-radius: 20px 20px 0px 0px;
 }
