@@ -9,7 +9,7 @@
 }
 body{
     height: 100vh;
-    background-color: white;
+    background-color: whitesmoke;
     color: black;
          font-family: BBH Hegarty;
 
@@ -19,14 +19,15 @@ body{
     height: 10vh;
     position: fixed;
     width: 100%;
-  /* background-color: rgba(255, 255, 255, 0.104); */
+  background-color: rgba(255, 255, 255, 0.104);
       display: flex;
     justify-content: right;
-     /* backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);  */
+     backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px); 
     align-items: center;
     gap: 120px;
-    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    z-index: 99;
 }
 .nav ul{
  display: flex;
@@ -105,6 +106,7 @@ body{
     color: white;
     text-shadow: black 5px 5px 0px;
     letter-spacing: 3px;
+    z-index: 100;
 }
 .btns{
     height: 100px;
@@ -126,6 +128,7 @@ body{
   background-color: #1e5678; /* لون الخلفية */
   border: 2px solid #000;
   clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 100%);
+  
 }
 
 
@@ -418,37 +421,100 @@ align-items: center;
   width: 95%;
   background-color: black;
   border-radius:20px ;
+  background-image: url(/media/pexels-cottonbro-6202810.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: start;
+  align-items: end;
 }
 .ons1{
     height: 35%;
   width: 95%;
   background-color: black;
   border-radius:20px ;
+  background-image: url(/media/dddepth-337.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  padding-left: 15px;
+  gap: 25px;
+  letter-spacing: 2px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+.ons1 h3 {
+  border-bottom: solid 0.5px black;
+  padding-bottom: 5px;
 }
 
 .tws{
   height: 47%;
   width: 95%;
-  background-color: black;
+  background-color: rgb(212, 40, 40);
   border-radius:20px ;
+  background-image: url(/media/dddepth-328.jpg);
+  background-size: cover;
+display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  padding-left: 15px;
+  gap: 25px;
+  letter-spacing: 2px;
+    font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
 }
+
+.tws h3 {
+  border-bottom: solid 0.5px black;
+  padding-bottom: 5px;
+  font-weight: 900;
+}
+
 .tws1{
     height: 47%;
   width: 95%;
   background-color: black;
   border-radius:20px ;
+    display: flex;
+  justify-content: start;
+  align-items: end;
+   background-image: url(/media/efc9068b8992430ddffcc1736741c136.jpg);
+  background-size: cover;
 }
 .trs{
     height: 35%;
   width: 95%;
   background-color: black;
   border-radius:20px ;
+      display: flex;
+  justify-content: start;
+  align-items: end;
+   background-image: url(/media/front-view-positive-woman-with-cancer.jpg);
+  background-size: cover;
 }
 .trs1{
    height: 60%;
   width: 95%;
   background-color: black;
   border-radius:20px ;
+  background-image: url(/media/dddepth-237.jpg);
+  background-size: cover;
+display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  padding-left: 15px;
+  gap: 25px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+.trs1 h3 {
+  border-bottom: solid 0.5px black;
+  padding-bottom: 5px;
+  font-weight: 900;
 }
 .leftabt2{
   height: 100%;
@@ -460,11 +526,11 @@ align-items: center;
   height: 70%;
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
   letter-spacing: 2px;
-  
+  gap: 20px;
  
 }
 .sty1{
@@ -487,7 +553,7 @@ align-items: center;
   align-items: start;
   flex-direction: column;
   letter-spacing: 2px;
-  background-color: #0a81cb;
+  background-color: white;
 }
 
 .avatar-card {
@@ -539,9 +605,9 @@ align-items: center;
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  border: 1px solid #F9F7F5; /* نفس لون خلفية الموقع في الصورة */
+  border: 1px solid #000000; 
   overflow: hidden;
-  margin-left: -12px; /* هذا ما يجعل الصور تتداخل */
+  margin-left: -12px; 
   background-color: #eee;
   display: flex;
   align-items: center;
@@ -584,7 +650,7 @@ align-items: center;
 }
 .end button{
     height: 40px;
-    width: 50%;
+    width: 40%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -609,4 +675,55 @@ align-items: center;
 
 .ppl p{
   padding-left: 10px;
+}
+.bild p {
+  color: rgb(63, 61, 61);
+  font-family: popping;
+  align-self: flex-start;
+  padding-left: 10px;
+}
+
+.slid{
+  height: 60px;
+  width: 60%;
+  border-radius: 0% 70px 70px 0px;
+  background-color: whitesmoke;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: popping;
+  font-size: 17px;
+  box-shadow: #22222253 5px 5px 3px;
+
+  border: solid 0.5px rgba(0, 0, 0, 0.593) ;
+  border-left: none;
+}
+
+.slid1{
+  height: 60px;
+  width: 60%;
+  border-radius: 0% 70px 70px 0px;
+  background-color: whitesmoke;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: popping;
+  font-size: 16px;
+  padding-left: 17px;
+    box-shadow: #22222253 5px 5px 3px;
+
+  border: solid 0.5px rgba(0, 0, 0, 0.593) ;
+  border-left: none;
+}
+
+.end button i{
+  height: 35px;
+  width: 35px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content:  center;
+  align-items: center;
 }
