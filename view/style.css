@@ -733,7 +733,7 @@ display: flex;
   /* Bebas Neue */
 
 .ourvesion{
-  height: 100vh;
+  height: 120vh;
     font-family:Bebas Neue ;
 
 
@@ -750,7 +750,7 @@ display: flex;
 }
 
 .bothe{
-height: 50%;
+height: 40%;
 width: 100%;
 display: flex;
 justify-content: center;
@@ -774,6 +774,10 @@ align-items: center;
   font-size: 20xp;
   letter-spacing: 1.5px;
   border-right: solid 1px ;
+}
+.titels p{
+    color: rgb(86, 86, 86);
+
 }
 .range{
   height: 80%;
@@ -814,4 +818,66 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+.ourend{
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ph{
+  height: 100%;
+  width: 50%;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.exp{
+    height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+  flex-direction: column;
+    font-family:  Bebas Neue ;
+}
+.cader{
+  height: 90%;
+  width: 80%;
+  background-color: white;
+  position: relative;
+  background-image: url(/media/child-suffering-from-cancer.jpg);
+  background-size: cover;
+}
+.bigl{
+  position: absolute;
+  height: 50%;
+  left: 0;
+  top: 0;
+  
+}
+.cards{
+  height: 40%;
+  width: 100%;
+  background-color: #1e5678;
+}
+.exp button{
+  padding: 5px 20px;
+  border-radius: 50px;
+  background-color: transparent;
+  font-size: 20px;
+  font-family:  Bebas Neue ;
+  border: 3px solid  #1e5678 ;
+  color: #1e5678;
+  cursor: pointer;
+
+}
+.exp h1{
+color:#0a81cb;
+font-size: 40px;
+}
+.exp p{
+  color: rgb(86, 86, 86);
 }
