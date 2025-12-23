@@ -750,7 +750,7 @@ display: flex;
 }
 
 .bothe{
-height: 40%;
+height: 30%;
 width: 100%;
 display: flex;
 justify-content: center;
@@ -906,4 +906,16 @@ font-size: 40px;
 
 .crd1 h2{
 color:#1e5678;
+}
+
+.donaitions{
+  height: 120vh;
+  background-color: red;
+}
+.big{
+  height:40% ;
+  width: 100%;
+  background-color: black;
+  background-image: url(/media/Cream\ and\ Brown\ Photographic\ Beauty\ Site\ Launch\ Website\ \(1\).png);
+  background-size: cover;
 }
