@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&family=BBH+Hegarty&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&family=BBH+Hegarty&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&family=BBH+Hegarty&family=Bebas+Neue&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&family=BBH+Hegarty&family=Bebas+Neue&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&family=BBH+Hegarty&family=Bebas+Neue&family=Lilex:ital,wght@0,100..700;1,100..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&family=BBH+Hegarty&family=Bebas+Neue&family=Lilex:ital,wght@0,100..700;1,100..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Quicksand:wght@300..700&family=Space+Grotesk:wght@300..700&display=swap');
 
 *{
     padding: 0;
@@ -908,14 +911,60 @@ font-size: 40px;
 color:#1e5678;
 }
 
-.donaitions{
-  height: 120vh;
-  background-color: red;
-}
-.big{
-  height:40% ;
+.howtohelp{
+  height: 100vh;
   width: 100%;
-  background-color: black;
-  background-image: url(/media/Cream\ and\ Brown\ Photographic\ Beauty\ Site\ Launch\ Website\ \(1\).png);
-  background-size: cover;
+}
+
+.part{
+  height: 55%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Space Grotesk ;
+}
+.prttitl{
+  height: 100%;
+  width: 70%;
+  /* font-family:Lilex  ; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.prtcrd{
+  height: 100%;
+  width: 26%;
+  background-color: rgb(150, 48, 164); 
+  margin-right: 20px;
+}
+.prttitl h1{
+  font-size: 80px;
+}
+.ofho{
+  padding: 10px 30px;
+  border-radius: 70px;
+  border: solid black 2px;
+  font-size: 30px;
+}
+/* Quicksand    -  Lilex  - Space Grotesk  */
+
+.be{
+align-self: self-end;
+padding-right: 30px;
+}
+.lrn{
+  align-self: self-start;
+  padding-left: 40px;
+
+}
+.str{
+   align-self: self-start;
+  padding-left: 320px;
+}
+.and{
+
+  align-self: self-end;
+padding-right: 30px;
 }
