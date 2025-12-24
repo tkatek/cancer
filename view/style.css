@@ -932,11 +932,12 @@ color:#1e5678;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 .prtcrd{
   height: 100%;
-  width: 26%;
-  background-color: rgb(150, 48, 164); 
+  width: 24%;
+  background-color: rgb(228, 228, 228); 
   margin-right: 20px;
 }
 .prttitl h1{
@@ -945,7 +946,7 @@ color:#1e5678;
 .ofho{
   padding: 10px 30px;
   border-radius: 70px;
-  border: solid black 2px;
+  border: solid black 0.5px;
   font-size: 30px;
 }
 /* Quicksand    -  Lilex  - Space Grotesk  */
@@ -967,4 +968,45 @@ padding-right: 30px;
 
   align-self: self-end;
 padding-right: 30px;
+}
+
+.prtcrd{
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+  background-image: url(/media/82f565fe80f9a4332b5ea930b5b204b7.jpg);
+  position: relative;
+}
+.prtcrd button{
+  padding: 5px 20px;
+  border-radius: 50px;
+  background-color: transparent;
+  font-size: 20px;
+  font-family:  Bebas Neue ;
+  border: 3px solid  white ;
+  color: white;
+  text-shadow: #000 1px 1px 0px;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-top: 12px;
+}
+.prtcrd p{
+    font-family:  Bebas Neue ;
+color: black;
+font-size: 30px;
+}
+.prtcrd span{
+  color: white;
+}
+.ass{
+  position: absolute;
+  height: 200px;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+.howdwn{
+  
 }
