@@ -1010,20 +1010,92 @@ font-size: 30px;
 .howdwn{
   height: 50%;
   width: 100%;
-  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .grn{
   height: 100%;
   width: 60%;
-  background-color: greenyellow;
+  background-color: #0a81cb;;
+  border-radius: 0px 50px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .btn{
   height: 12%;
   width: 100%;
-  background-color: red;
   display: flex;
   justify-content: start;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
+  margin-left: 50px;
+
+}
+.grbtn1{
+  padding: 4px 40px;
+  background-color: #000;
+  border-radius: 60px;
+  cursor: pointer;
+  font-size: 20px;
+    font-family:  Bebas Neue ;
+color:#0a81cb;;
+border: none;
+outline: none;
+}
+.grbtn2{
+    padding: 4px 25px;
+  background-color: transparent;
+  border-radius: 60px;
+  cursor: pointer;
+  font-size: 20px;
+    font-family:  Bebas Neue ;
+color: rgb(0, 0, 0);
+border: solid 1px black;
+outline: none;
+}
+
+.grbtn3{
+  padding: 4px 18px;
+  background-color: transparent;
+  border-radius: 60px;
+  cursor: pointer;
+  font-size: 20px;
+    font-family:  Bebas Neue ;
+color: rgb(0, 0, 0);
+border: solid 1px black;
+outline: none;
+}
+
+.howtht{
+  height: 80%;
+  width: 100%;
+  font-family: Space Grotesk;
+}
+.picon{
+  height: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.picon img{
+height: 100px;
+}
+.howtht h1{
+  color: black;
+  font-size: 85px;
+}
+.picon p{
+  font-size: 20px;
+  border-top: solid 1px;
+  padding-top: 30px;
+}
+.howgrd{
+  height: 100%;
+  width: 40%;
+  background-color: rgb(0, 64, 255);
 }
