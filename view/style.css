@@ -1017,3 +1017,13 @@ font-size: 30px;
   width: 60%;
   background-color: greenyellow;
 }
+
+.btn{
+  height: 12%;
+  width: 100%;
+  background-color: red;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 8px;
+}
