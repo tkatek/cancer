@@ -1106,13 +1106,30 @@ height: 100px;
   height: 47%;
   width: 90%;
   background-color: red;
-  border-radius: 20px;
-  background-image: url(/media/blod.jpg);
+  background-image: url(/media/kid.jpg);
   background-size: cover;
 }
 .wodwn{
   height: 47%;
   width: 90%;
-  background-color: rgb(0, 238, 255);
   border-radius: 20px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 40px;
+}
+.wodwn1{
+  height: 100%;
+  width: 40%;
+  background-color: white;
+    border-radius: 20px;
+
+}
+
+.wodwn2{
+  height: 100%;
+  width: 40%;
+  background-color: #222;
+    border-radius: 20px;
+
 }
