@@ -1097,5 +1097,22 @@ height: 100px;
 .howgrd{
   height: 100%;
   width: 40%;
-  background-color: rgba(40, 51, 138, 0.566);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.wotop{
+  height: 47%;
+  width: 90%;
+  background-color: red;
+  border-radius: 20px;
+  background-image: url(/media/blod.jpg);
+  background-size: cover;
+}
+.wodwn{
+  height: 47%;
+  width: 90%;
+  background-color: rgb(0, 238, 255);
+  border-radius: 20px;
 }
