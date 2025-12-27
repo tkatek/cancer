@@ -1194,6 +1194,7 @@ color: white;
   justify-content:space-evenly;
   align-items: center;
   flex-direction: column;
+  border-bottom: solid 1px;
 }
 .pbtn p{
 
@@ -1223,4 +1224,14 @@ transition: 0.5s;
   background-color: #222;
   color: white;
 
+}
+.ourptitel h1{
+  font-size: 50px;
+  letter-spacing: 1px;
+}
+
+.ourpcards{
+  height: 70%;
+  width: 100%;
+  background-color: red;
 }
