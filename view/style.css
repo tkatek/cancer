@@ -914,15 +914,23 @@ color:#1e5678;
 .howtohelp{
   height: 100vh;
   width: 100%;
+  overflow: hidden;
 }
 
 .part{
-  height: 55%;
+  height: 50%;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: Space Grotesk ;
+  position: relative;
+}
+.ribbon{
+  position: absolute;
+  height: 300px;
+  right: 0;
+  top: 0;
 }
 .prttitl{
   height: 100%;
@@ -937,11 +945,11 @@ color:#1e5678;
 .prtcrd{
   height: 100%;
   width: 24%;
-  background-color: rgb(228, 228, 228); 
+  background-color: rgb(33, 223, 179); 
   margin-right: 20px;
 }
 .prttitl h1{
-  font-size: 80px;
+  font-size: 70px;
 }
 .ofho{
   padding: 10px 30px;
@@ -976,8 +984,11 @@ padding-right: 30px;
   justify-content: space-between;
   align-items: start;
   flex-direction: column;
-  background-image: url(/media/82f565fe80f9a4332b5ea930b5b204b7.jpg);
+  /* background-image: url(/media/82f565fe80f9a4332b5ea930b5b204b7.jpg); */
   position: relative;
+  background-color: #e1e1e176;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 .prtcrd button{
   padding: 5px 20px;
@@ -985,9 +996,8 @@ padding-right: 30px;
   background-color: transparent;
   font-size: 20px;
   font-family:  Bebas Neue ;
-  border: 3px solid  white ;
-  color: white;
-  text-shadow: #000 1px 1px 0px;
+  border: 3px solid  black ;
+  color: black;
   cursor: pointer;
   margin-left: 10px;
   margin-top: 12px;
@@ -998,7 +1008,8 @@ color: black;
 font-size: 30px;
 }
 .prtcrd span{
-  color: white;
+  color: rgb(255, 255, 255);
+  text-shadow: #000 2px 2px 0px;
 }
 .ass{
   position: absolute;
@@ -1165,4 +1176,7 @@ padding-left: 5px;
 font-size: 15px;
 padding-left: 5px;
 color: white;
+}
+.ourprograms{
+  height: 100vh;
 }
