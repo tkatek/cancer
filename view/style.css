@@ -1268,8 +1268,18 @@ color: white;
   width: 30%;
   z-index: 1;
    background-color: #d7d7d7ab;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  background-image: url(/media/pexels-cottonbro-6203418\ \(1\).jpg);
+    background-size: cover;
+    display: flex;
+  justify-content: end;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+    font-family:Bebas Neue;
+color: white;
+
 }
 
 .card2{
@@ -1277,8 +1287,19 @@ color: white;
   width: 30%;
   z-index: 1;
    background-color: #d7d7d7ab;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+ background-image: url(/media/young-child-therapy-battling-cancer.jpg);
+     background-size: cover;
+         display: flex;
+  justify-content: end;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+    font-family:Bebas Neue;
+color: white;
+
+
 }
 .under{
 position: absolute;
@@ -1286,7 +1307,7 @@ top: 0;
 z-index: -2;
 font-size: 100px;
 padding: 0;
-top: -30px;
+top: -40px;
 color: #0a81cb;
 
 }
