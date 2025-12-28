@@ -1478,6 +1478,10 @@ color: #0a81cb;
 
         .oursotories{
           height: 120vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
         }
         .sttitel{
           height: 30%;
@@ -1500,11 +1504,13 @@ text-align: center;
 
         }
         .snums{
-             height: 25%;
+             height: 22%;
           width: 100%;
           display: flex;
           justify-content: space-evenly;
           align-items: center;
+          margin-top: 20px;
+          position: relative;
         }
           .sttitel button{
             padding: 10px 40px;
@@ -1668,15 +1674,28 @@ font-weight: 500;
 .nts{
   height: 100%;
   width: 22%;
-  background-color: red;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
   text-align: center;
+  border-right: solid 1px;
 }
 .nts h1{
   font-size: 70px;
      font-family: Space Grotesk;
 
+}
+.nts p{
+  font-size: 15px;
+  text-align: start;
+  padding-left: 15px;
+  color: rgb(39, 39, 39);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.qot{
+  position: absolute;
+  height: 80px;
+  right: 5px;
+  top: 0;
 }
