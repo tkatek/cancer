@@ -1228,10 +1228,65 @@ transition: 0.5s;
 .ourptitel h1{
   font-size: 50px;
   letter-spacing: 1px;
+  color:#1e5678;
 }
 
 .ourpcards{
   height: 70%;
   width: 100%;
-  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 10px;
+  position: relative;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  z-index: 1;
+}
+
+.card{
+  height: 90%;
+  width: 30%;
+  z-index: 1;
+   background-color: #d7d7d7ab;
+  background-image: url(/media/pexels-cottonbro-6202810.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+    font-family:Bebas Neue;
+color: white;
+}
+
+
+.card1{
+    height: 90%;
+  width: 30%;
+  z-index: 1;
+   background-color: #d7d7d7ab;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.card2{
+    height: 90%;
+  width: 30%;
+  z-index: 1;
+   background-color: #d7d7d7ab;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+.under{
+position: absolute;
+top: 0;
+z-index: -2;
+font-size: 100px;
+padding: 0;
+top: -30px;
+color: #0a81cb;
+
 }
