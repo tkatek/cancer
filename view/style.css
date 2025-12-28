@@ -336,7 +336,8 @@ align-items: center;
     position: absolute;
     height: 80px;
     bottom: 0;
-    left: 30px;
+    left: 10px;
+    z-index: 5;
 }
 .two p {
     border-right: solid #222 1px;
@@ -1203,7 +1204,7 @@ color: white;
   align-self: flex-start;
   padding-left: 30px;
   letter-spacing: 2px;
-  font-family: Lilex;
+  font-family: Space Grotesk;
 }
 
 .pbtn button{
@@ -1229,6 +1230,7 @@ transition: 0.5s;
   font-size: 50px;
   letter-spacing: 1px;
   color:#1e5678;
+  padding-left: 20px;
 }
 
 .ourpcards{
@@ -1244,7 +1246,7 @@ transition: 0.5s;
   z-index: 1;
 }
 
-.card{
+/* .card{
   height: 90%;
   width: 30%;
   z-index: 1;
@@ -1260,9 +1262,9 @@ transition: 0.5s;
   padding-bottom: 20px;
     font-family:Bebas Neue;
 color: white;
-}
+} */
 
-
+/* 
 .card1{
     height: 90%;
   width: 30%;
@@ -1279,10 +1281,11 @@ color: white;
   padding-bottom: 20px;
     font-family:Bebas Neue;
 color: white;
+filter: grayscale(50%) brightness(70%); /* رمادي بنسبة 50% وتقليل السطوع */
 
-}
+/* }  */
 
-.card2{
+/* .card2{
     height: 90%;
   width: 30%;
   z-index: 1;
@@ -1300,7 +1303,7 @@ color: white;
 color: white;
 
 
-}
+} */
 .under{
 position: absolute;
 top: 0;
@@ -1311,3 +1314,168 @@ top: -40px;
 color: #0a81cb;
 
 }
+
+.card {
+            height: 90%; /* يمكنك تعديل الطول حسب حاجتك */
+            width: 30%;
+            position: relative; /* ضروري لعمل الطبقات */
+            z-index: 1;
+            display: flex;
+            justify-content: flex-end; /* يضع المحتوى في الأسفل */
+            align-items: flex-start; /* يضع المحتوى على اليسار */
+            flex-direction: column;
+            gap: 20px;
+            padding-left: 20px;
+            padding-bottom: 20px;
+            font-family: 'Bebas Neue', sans-serif;
+            color: white;
+            overflow: hidden; /* يمنع خروج الخلفية عن الحواف */
+             /* اختيارياً: لإعطاء مظهر عصري */
+        }
+
+        /* طبقة الخلفية مع الفلتر */
+        .card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #d7d7d7ab;
+            /* استبدل المسار بالصورة الخاصة بك */
+                        background-image: url(/media/pexels-cottonbro-6202810.jpg);
+
+            background-size: cover;
+            background-position: center;
+            
+            /* تطبيق الفلتر هنا فقط */
+            filter: grayscale(50%) brightness(70%);
+            
+            z-index: -1; /* يجعلها خلف النصوص */
+            transition: 0.5s; /* لجعل الانتقالات ناعمة */
+        }
+
+        /* تحسين مظهر النصوص */
+        .card h3, .card p {
+            margin: 0;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.5); /* لزيادة وضوح النص فوق الصورة */
+        }
+
+        /* تأثير اختياري عند تمرير الماوس لجعل الكارت يتفاعل */
+        .card:hover::before {
+            filter: grayscale(0%) brightness(90%); /* يرجع الألوان عند التمرير */
+            transform: scale(1.1); /* تكبير بسيط للصورة */
+        }
+
+
+
+
+        .card1 {
+            height: 90%; /* يمكنك تعديل الطول حسب حاجتك */
+            width: 30%;
+            position: relative; /* ضروري لعمل الطبقات */
+            z-index: 1;
+            display: flex;
+            justify-content: flex-end; /* يضع المحتوى في الأسفل */
+            align-items: flex-start; /* يضع المحتوى على اليسار */
+            flex-direction: column;
+            gap: 20px;
+            padding-left: 20px;
+            padding-bottom: 20px;
+            font-family: 'Bebas Neue', sans-serif;
+            color: white;
+            overflow: hidden; /* يمنع خروج الخلفية عن الحواف */
+             /* اختيارياً: لإعطاء مظهر عصري */
+        }
+
+        /* طبقة الخلفية مع الفلتر */
+        .card1::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #d7d7d7ab;
+            /* استبدل المسار بالصورة الخاصة بك */
+            background-image: url('/media/pexels-cottonbro-6203418 (1).jpg');
+
+            background-size: cover;
+            background-position: center;
+            
+            /* تطبيق الفلتر هنا فقط */
+            filter: grayscale(50%) brightness(70%);
+            
+            z-index: -1; /* يجعلها خلف النصوص */
+            transition: 0.5s; /* لجعل الانتقالات ناعمة */
+        }
+
+        /* تحسين مظهر النصوص */
+        .card1 h3, .card p {
+            margin: 0;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.5); /* لزيادة وضوح النص فوق الصورة */
+        }
+
+        /* تأثير اختياري عند تمرير الماوس لجعل الكارت يتفاعل */
+        .card1:hover::before {
+            filter: grayscale(0%) brightness(90%); /* يرجع الألوان عند التمرير */
+            transform: scale(1.1); /* تكبير بسيط للصورة */
+        }
+
+
+
+
+        .card2 {
+            height: 90%; /* يمكنك تعديل الطول حسب حاجتك */
+            width: 30%;
+            position: relative; /* ضروري لعمل الطبقات */
+            z-index: 1;
+            display: flex;
+            justify-content: flex-end; /* يضع المحتوى في الأسفل */
+            align-items: flex-start; /* يضع المحتوى على اليسار */
+            flex-direction: column;
+            gap: 20px;
+            padding-left: 20px;
+            padding-bottom: 20px;
+            font-family: 'Bebas Neue', sans-serif;
+            color: white;
+            overflow: hidden; /* يمنع خروج الخلفية عن الحواف */
+             /* اختيارياً: لإعطاء مظهر عصري */
+        }
+
+        /* طبقة الخلفية مع الفلتر */
+        .card2::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #d7d7d7ab;
+            /* استبدل المسار بالصورة الخاصة بك */
+            background-image: url(/media/young-child-therapy-battling-cancer.jpg);
+            background-size: cover;
+            background-position: center;
+            
+            /* تطبيق الفلتر هنا فقط */
+            filter: grayscale(50%) brightness(70%);
+            
+            z-index: -1; /* يجعلها خلف النصوص */
+            transition: 0.5s; /* لجعل الانتقالات ناعمة */
+        }
+
+        /* تحسين مظهر النصوص */
+        .card2 h3, .card p {
+            margin: 0;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.5); /* لزيادة وضوح النص فوق الصورة */
+        }
+
+        /* تأثير اختياري عند تمرير الماوس لجعل الكارت يتفاعل */
+        .card2:hover::before {
+            filter: grayscale(0%) brightness(90%); /* يرجع الألوان عند التمرير */
+            transform: scale(1.1); /* تكبير بسيط للصورة */
+        }
+
+        .oursotories{
+          height: 100vh;
+        }
