@@ -1477,5 +1477,206 @@ color: #0a81cb;
         }
 
         .oursotories{
-          height: 100vh;
+          height: 120vh;
         }
+        .sttitel{
+          height: 30%;
+          width: 100%;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          flex-direction: column;
+text-align: center;
+
+        }
+        .sgrid{
+          height: 45%;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+                    background-color: rgb(204, 219, 249);
+
+        }
+        .snums{
+             height: 25%;
+          width: 100%;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+        }
+          .sttitel button{
+            padding: 10px 40px;
+            font-size: 15px;
+                     font-family: BBH Hegarty;
+letter-spacing: 1px;
+border-radius: 7px;
+outline: none;
+background-color: #222;
+color: white;
+border: none;
+cursor: pointer;
+ 
+          }
+
+.grone,.grone4{
+  height: 100%;
+  width: 17%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.grone1{
+  height: 90%;
+    width: 15%;
+  background-color: yellow;
+  align-self: end;
+  background-image: url(/media/pexels-planeteelevene-3776204.jpg);
+  background-size: cover;
+color: white;
+/* font-family:'Bebas Neue; */
+display: flex;
+justify-content: end;
+align-items: center;
+flex-direction: column;
+gap: 20px;
+}
+.grone1 p{
+
+ font-family:Bebas Neue;
+  font-size: 20px;
+}
+.grone1 h2{
+  font-size: 60px;
+     font-family: Space Grotesk;
+     text-shadow: #000 1px 1px 1px;
+
+
+}
+
+
+.grone2{
+    height: 80%;
+    width: 17%;
+  background-color:#05395a;
+  align-self: end;
+  display: flex;
+justify-content: end;
+align-items: center;
+flex-direction: column;
+padding-bottom: 10px;
+gap: 30px;
+color: black;
+
+background-image: url(/media/chake.jpg);
+background-size: cover;
+
+}
+
+.grone2 p{
+  font-family:Bebas Neue;
+  font-size: 25px;
+  align-self: flex-start;
+  padding-left: 20px;
+}
+
+
+.grone2 button{
+  padding: 10px 40px;
+            font-size: 15px;
+                     font-family: BBH Hegarty;
+letter-spacing: 1px;
+border-radius: 7px;
+outline: none;
+background-color: #222;
+color: #fff;
+border: none;
+cursor: pointer;
+}
+.grone2 h1{
+  text-shadow: #d9d9d9 1px 1px 0px;
+}
+
+
+.grone3{
+    height: 90%;
+    width: 17%;
+  align-self: end;
+  background-image: url(/media/part.jpg);
+  background-size: cover;
+
+  display: flex;
+justify-content: end;
+align-items: center;
+flex-direction: column;
+padding-bottom: 10px;
+gap: 30px;
+color: black;
+  font-family:Bebas Neue;
+  font-size: 25px;
+  
+
+}
+.on1{
+  height: 60%;
+  width: 100%;
+  background-color: rgb(0, 47, 255);
+  background-image: url(/media/young-child-therapy-battling-cancer\ \(1\).jpg);
+  background-size: cover;
+
+}
+
+.on2{
+  height: 37%;
+  width: 100%;
+  background-image: url(/media/red.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  flex-direction: column;
+  padding-bottom: 10px;
+  
+
+}
+.on2 h1{
+  padding-left: 30px;
+   font-family: Space Grotesk;
+  font-size: 50px;
+  font-weight: 900;
+  text-shadow: gray 1px 1px 1px;
+
+ 
+  align-self: center;
+}
+
+.on2 p{
+     font-family: Space Grotesk;
+font-weight: 500;
+}
+.grone4 .on1{
+  height: 37%;
+  background-image: url(/media/group.jpg);
+  background-size: cover;
+}
+.grone4 .on2{
+  height: 60%;
+  background-image: url(/media/hug.jpg);
+}
+.nts{
+  height: 100%;
+  width: 22%;
+  background-color: red;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.nts h1{
+  font-size: 70px;
+     font-family: Space Grotesk;
+
+}
