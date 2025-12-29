@@ -1746,10 +1746,85 @@ font-weight: 500;
 
 .contact{
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
   /* font-family:Lilex  ; */
 
 .sttitel p{
    font-family:Lilex  ;
 font-size: 15px;
+}
+
+.cntright{
+  height: 100%;
+  width: 50%;
+  background-color: red;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+  flex-direction: column;
+}
+.cntleft{
+    height: 100%;
+  width: 50%;
+  background-color: rgb(70, 157, 124);
+}
+.frs{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.line{
+  height: 20px;
+}
+.get{
+  font-size: 80px;
+  letter-spacing: 1px;
+}
+.eml{
+  height: 100px;
+  width: 100%;
+  background-color: rgb(43, 255, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.phn{
+    height: 100px;
+  width: 100%;
+  background-color: rgb(43, 255, 0);
+}
+.cntbtn {
+  padding: 10px  40px ;
+  border-radius: 30px;
+  background-color: #222;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+    font-size: 15px;
+     font-family: BBH Hegarty;
+            letter-spacing: 1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+}
+
+.cntbtn i{
+  height: 40px;
+  width: 40px;
+  background-color:white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+.touch{
+   font-size: 80px;
+  letter-spacing: 1px;
 }
