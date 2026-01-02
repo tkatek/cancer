@@ -5,6 +5,7 @@
 }
 body{
     background-color: rgb(50, 50, 50);
+    position: relative;
 }
 .hero{
     height: 100vh;
@@ -12,19 +13,27 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
 }
 .navbar{
     height: 7vh;
     width: 90%;
-    background: rgba(255, 255, 255, 0.892);
+    background: rgba(230, 230, 230, 0.323);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  position: fixed;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: rgb(0, 0, 0);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 15px;
+  border: none;
+  box-shadow: #2d2d2d83 2px 2px 4px;
 }
 .logo{
     height: 100%;
@@ -93,4 +102,12 @@ body{
 
 
 
+
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    background-color: red;
+    background-image: url(/media/surgery-1807541_1920.jpg);
+    background-size: cover;
 }
