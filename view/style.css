@@ -119,7 +119,7 @@ font-weight: 500;
     justify-content: center;
     align-items: center;
     position: relative;
-            background: linear-gradient(to top , #222 , transparent);
+            background: linear-gradient(to top , #090909 , transparent);
 
 }
 .main::before{
@@ -173,20 +173,21 @@ font-weight: 500;
     bottom: 0;
  }
  .crdbtn{
-    z-index: 5;
-    padding: 12px 50px;
-    border-radius: 20px;
-    border: none;
-    font-size: 18px;
-    color: black;
-    background-color: white;
-    cursor: pointer;
-        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-border: solid white ;
     position: absolute;
-    bottom: -20px;
-    right: -20px;
-    box-shadow: #2222226e 2px 2px 2px;
+    z-index: 5;
+    padding: 15px 40px;
+    color: white;
+    background-color: rgb(102, 180, 225);
+        font-family: Barlow;
+text-transform: uppercase;
+outline: none;
+border: none;
+border-radius: 30px;
+font-size: 18px;
+cursor: pointer;
+margin-left: 80px;
+bottom: -20px;
+right: -20px;
  }
 .minicrd{
     position: absolute;
@@ -224,7 +225,7 @@ padding-left: 15px;
     width: 30px;
     height: 30px;
     border-radius: 50%; /* لجعلها دائرية */
-    border: 1px solid ; /* نفس لون التدرج الذي اخترته */
+    /* border: 1px solid ; نفس لون التدرج الذي اخترته */
     margin-left: -15px; /* تداخل الصور */
     object-fit: cover;
     transition: transform 0.3s ease;
@@ -253,7 +254,7 @@ padding-left: 15px;
     align-items: center;
     font-size: 14px;
     font-weight: bold;
-    border: 1px solid ;
+    /* border: 1px solid ; */
     margin-left: -15px;
 }
 
@@ -268,14 +269,14 @@ padding-left: 15px;
 .cntnt{
     height: 90%;
     width: 100%;
-    /* background-color: red; */
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     flex-direction: column;
+    gap: 40px;
 }
 .welcom{
-    padding: 10px 40px;
+    padding: 10px 30px;
     border-radius: 20px ;
     border: solid 2px #222 ;
     font-family: Barlow;
@@ -283,13 +284,19 @@ font-family: Barlow;
 font-size: 18px;
 font-weight: 600;
 cursor: pointer;
-background-color: #222;
-color: white;
+/* background-color: #222; */
+color: black;
+margin-left: 90px;
 }
 .subtitel{
     height: 50%;
     width: 100%;
     font-family: Barlow;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    flex-direction: column;
 
 }
 .subtitel h1{
@@ -301,4 +308,47 @@ color: white;
     background: linear-gradient(135deg, #fff 60%, rgba(255, 255, 255, 0.296));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; /* This creates a gradient effect on the text itself */
+        padding-left: 15px;
+
+}
+.subtitel p{
+    font-size: 18px;
+    padding-left: 25px;
+color: white;
+}
+.btnhero{
+    padding: 15px 40px;
+    color: white;
+    background-color:rgb(66, 153, 204);
+        font-family: Barlow;
+text-transform: uppercase;
+outline: none;
+border: none;
+border-radius: 30px;
+font-size: 18px;
+cursor: pointer;
+margin-left: 80px;
+}
+.subtitel{
+    /* background-color: red; */
+    position: relative;
+}
+.mouse {
+    position: absolute;
+    bottom: 20px;
+    height: 30px;
+    /* جعل الحركة مستمرة (infinite) وبالتبادل (alternate) لتعود لمكانها بسلاسة */
+    animation: scroll-float 2s ease-in-out infinite;
+}
+
+@keyframes scroll-float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* ترتفع للأعلى */
+    }
+    100% {
+        transform: translateY(0); /* تعود لمكانها */
+    }
 }
