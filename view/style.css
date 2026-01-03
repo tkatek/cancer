@@ -363,6 +363,9 @@ margin-left: 80px;
     height: 50%;
     width: 100%;
     /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
  }
  .two{
      height: 50%;
@@ -398,6 +401,7 @@ font-weight: 600;
     font-size: 80px;
     padding-left: 60px;
     font-family: Bebas Neue;
+    color: rgb(66, 153, 204);
  }
  .side p{
     font-size: 20px;
@@ -410,3 +414,41 @@ font-weight: 600;
     height: 80px;
     top: 40px;
  }
+
+
+ .side1{
+    height: 100%;
+    width: 50%;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .side1 img{
+height: 100%;
+width: 100%;
+border-radius: 20px;
+object-fit: cover;
+position: relative;
+ }
+
+  .gg{
+    height: 90%;
+width: 90%;
+border-radius: 20px;
+background-color: yellow;
+position: relative;
+
+  }
+  .gg::before{
+    position: absolute;
+    content: '';
+    height: 50%;
+    width: 40%;
+    background-color: green;
+    z-index: 5;
+    border-radius: 0px 20px 0px 20px;
+  border-top: 20px solid white;
+  border-right: 20px solid white;
+bottom: 0;
+  }
