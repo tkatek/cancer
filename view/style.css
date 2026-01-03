@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&family=BBH+Hegarty&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Lilex:ital,wght@0,100..700;1,100..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Quicksand:wght@300..700&family=Space+Grotesk:wght@300..700&display=swap');
+
+
+
 *{
     padding: 0;
     margin: 0;
@@ -25,7 +29,7 @@ body{
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   position: fixed;
-
+border-radius: 7px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: rgb(0, 0, 0);
   display: flex;
@@ -46,7 +50,8 @@ body{
     align-items: center;
     list-style: none;
     font-size: 20px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-family: Barlow;
+font-weight: 500;
 
 }
 .navbar li{
@@ -59,9 +64,10 @@ body{
     height: 0px;
     width: 100%;
     border-radius: 0px 0px 10px 10px;
-    background-color: rgb(66, 153, 204);
-    top: -58%;
+    background-color: rgb(4, 59, 91);
+    top: -42%;
     transition: 0.5s;
+    /* box-shadow:rgb(66, 153, 204) 4px 0px 2px ; */
 }
 .navbar li:hover::before{
         height: 10px;
@@ -136,9 +142,12 @@ body{
  .left{
     height: 100%;
     width: 60%;
-    background-color: rebeccapurple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
  }
  .right{
+    position: relative;
         height: 100%;
     width: 40%;
     /* background-color: rgb(51, 51, 153); */
@@ -150,8 +159,10 @@ body{
     height: 60%;
     width: 70%;
     border-radius:  20px;
-    background: linear-gradient(to bottom right , rgba(0, 0, 0, 0.914) ,transparent);
+    background: linear-gradient(to bottom right , rgba(254, 254, 254, 0.914) ,transparent);
     display: flex;
+      backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
     justify-content: center;
     align-items: center;
     position: relative;
@@ -161,3 +172,133 @@ body{
     position: absolute;
     bottom: 0;
  }
+ .crdbtn{
+    z-index: 5;
+    padding: 12px 50px;
+    border-radius: 20px;
+    border: none;
+    font-size: 18px;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+border: solid white ;
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    box-shadow: #2222226e 2px 2px 2px;
+ }
+.minicrd{
+    position: absolute;
+    z-index: 5;
+height: 100px;
+width: 180px;
+background-color: rgba(255, 255, 255, 0.958);
+     backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+border-radius: 20px;
+top: -20px;
+left: -70px;
+display: flex;
+justify-content: start;
+align-items: center;
+flex-direction: column;
+/* text-align: center; */
+font-family: Barlow;
+padding-top: 10px;
+padding-left: 15px;
+ }
+ .minicrd span{
+    font-size: 22px;
+    font-weight: 500;
+ }
+ /*  */
+ .profile-group {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    align-self: flex-start;
+}
+
+.avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* لجعلها دائرية */
+    border: 1px solid ; /* نفس لون التدرج الذي اخترته */
+    margin-left: -15px; /* تداخل الصور */
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+/* لجعل الصورة تبرز عند تمرير الماوس فوقها */
+.avatar:hover {
+    transform: translateY(-5px);
+    z-index: 10;
+}
+
+/* أول صورة لا تحتاج لهامش سالب */
+.avatar:first-child {
+    margin-left: 0;
+}
+
+.avatar-count {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid ;
+    margin-left: -15px;
+}
+
+.sketch{
+    position: absolute;
+    height: 100px;
+    z-index: 5;
+    bottom: 15%;
+    left: 40px;
+}
+
+.cntnt{
+    height: 90%;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.welcom{
+    padding: 10px 40px;
+    border-radius: 20px ;
+    border: solid 2px #222 ;
+    font-family: Barlow;
+font-family: Barlow;
+font-size: 18px;
+font-weight: 600;
+cursor: pointer;
+background-color: #222;
+color: white;
+}
+.subtitel{
+    height: 50%;
+    width: 100%;
+    font-family: Barlow;
+
+}
+.subtitel h1{
+    font-size: clamp(2.5rem, 8vw, 5rem); /* Responsive font size */
+    font-weight: 900;
+    text-transform: uppercase; /* Makes it look more professional */
+    letter-spacing: -2px;
+    line-height: 1.1;
+    background: linear-gradient(135deg, #fff 60%, rgba(255, 255, 255, 0.296));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* This creates a gradient effect on the text itself */
+}
