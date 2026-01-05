@@ -352,7 +352,7 @@ margin-left: 80px;
     }
 }
  .mm{
-    height: 100vh;
+    height: 120vh;
     background-color: whitesmoke;
     display: flex;
     justify-content: space-evenly;
@@ -360,7 +360,7 @@ margin-left: 80px;
     flex-direction: column;
  }
  .one{
-    height: 50%;
+    height: 40%;
     width: 100%;
     /* background-color: red; */
     display: flex;
@@ -368,9 +368,9 @@ margin-left: 80px;
     align-items: center;
  }
  .two{
-     height: 50%;
+     height: 60%;
+     background-color: red;
     width: 100%;
-    background-color: rgb(54, 68, 147); 
  }
  .side{
     height: 100%;
@@ -419,36 +419,82 @@ font-weight: 600;
  .side1{
     height: 100%;
     width: 50%;
-    background-color: blue;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
+    background-image: url(/media/child-having-medical-checkup.jpg);
+    background-size: cover;
+        font-family: Bebas Neue;
+        border-radius: 0px 0px 0px 300px;
+
  }
- .side1 img{
+ /* .side1 img{
 height: 100%;
 width: 100%;
 border-radius: 20px;
 object-fit: cover;
 position: relative;
+ } */
+
+
+ .gg{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+ }
+ .gg h1{
+    font-size: 60px;
+    align-self: flex-start;
+    padding-left: 15px;
+       color: rgb(20, 64, 90);
+
+ }
+ .cards2{
+    height: 50%;
+    width: 100%;
+    /* background-color: ; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+ }
+ .sdcrd{
+    height: 80%;
+    width: 45%;
+    background-color: rgba(255, 255, 255, 0.248);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border: #00000033 1px solid ;
  }
 
-  .gg{
-    height: 90%;
-width: 90%;
-border-radius: 20px;
-background-color: yellow;
-position: relative;
-
-  }
-  .gg::before{
-    position: absolute;
-    content: '';
+ 
+ .ttl{
+    /* background-color: red; */
     height: 50%;
-    width: 40%;
-    background-color: green;
-    z-index: 5;
-    border-radius: 0px 20px 0px 20px;
-  border-top: 20px solid white;
-  border-right: 20px solid white;
-bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+  .ttl h1{
+    font-size: 60px;
+    color: rgb(184, 229, 255);
+    text-shadow: #333 1px 1px 0px;
   }
+  .ttl img{
+    height: 50px;
+  }
+   .sdcrd p{
+    align-self: flex-start;
+    padding-left: 10px;
+    font-size: 20px;
+        color: rgb(6, 62, 95);
+
+   }
