@@ -7,6 +7,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/* Prevent images from causing layout shifts by default */
+img { max-width: 100%; height: auto; display: block; }
+
 body{
     background-color: rgb(255, 255, 255);
     position: relative;
@@ -28,8 +32,8 @@ body{
     height: 7vh;
     width: 90%;
     background: rgba(230, 230, 230, 0.323);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   position: fixed;
 border-radius: 7px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -144,6 +148,12 @@ font-weight: 500;
 
 }
 
+/* Prevent overscroll chaining and traps inside major sections */
+.main, .mm, .about, .hero {
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+} 
+
 
  .left{
     height: 100%;
@@ -167,16 +177,21 @@ font-weight: 500;
     border-radius:  20px;
     background: linear-gradient(to bottom right , rgba(254, 254, 254, 0.914) ,transparent);
     display: flex;
-      backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
     justify-content: center;
     align-items: center;
     position: relative;
  }
  .cardkid{
-    height: 150%;
+    /* avoid using >100% heights that can cause layout/paint shifts */
+    max-height: 100%;
+    height: auto;
     position: absolute;
     bottom: 0;
+    left: 0;
+    right: 0;
+    object-fit: cover;
  }
  .crdbtn{
     position: absolute;
@@ -201,8 +216,8 @@ right: -20px;
 height: 100px;
 width: 180px;
 background-color: rgba(255, 255, 255, 0.958);
-     backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+     backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 border-radius: 20px;
 top: -20px;
 left: -70px;
@@ -472,8 +487,8 @@ position: relative;
     width: 45%;
     background-color: rgba(255, 255, 255, 0.248);
     border-radius: 10px;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -832,9 +847,40 @@ border-radius: 50%;
     position: relative;
     display: block; /* لضمان أنه يأخذ مساحته الخاصة */
     width: 100%;
-    height: auto;
+    /* Allow content to determine the height, but keep a comfortable minimum */
     min-height: 100vh;
-    background-color: #a52a2a;
+    background-color: beige;
     z-index: 10;
+    /* padding: 40px 20px; */
+    box-sizing: border-box;
 }
 
+/* Ensure direct children behave predictably (avoid percent-height issues) */
+.donait > * {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Use viewport-based min-height on panels so they render reliably */
+.sudon1{
+   min-height: 40vh;
+   width: 100%;
+   background: red;
+   padding: 20px;
+   box-sizing: border-box;
+   text-align: center;
+display: flex;
+justify-content: center;
+align-content: center;
+flex-direction: column;
+
+}
+
+/* Secondary panel styles (example for cards area) */
+.crds1{
+   min-height: 60vh;
+   width: 100%;
+   background: #fff3f3;
+   padding: 20px;
+   box-sizing: border-box;
+}
