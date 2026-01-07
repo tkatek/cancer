@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&family=BBH+Hegarty&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Lilex:ital,wght@0,100..700;1,100..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Quicksand:wght@300..700&family=Space+Grotesk:wght@300..700&display=swap');
 
-
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&family=BBH+Hegarty&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Lilex:ital,wght@0,100..700;1,100..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&family=Space+Grotesk:wght@300..700&display=swap');
 
 *{
     padding: 0;
@@ -865,7 +865,7 @@ border-radius: 50%;
 .sudon1{
    min-height: 40vh;
    width: 100%;
-   background: red;
+   /* background: red; */
    padding: 20px;
    box-sizing: border-box;
    text-align: center;
@@ -873,7 +873,34 @@ display: flex;
 justify-content: center;
 align-content: center;
 flex-direction: column;
+font-family: Outfit;
+color: white;
+/* font-weight: 500; */
+/* font-size: 30px; */
+position: relative;
 
+}
+.in{
+    color:black;
+    align-self: flex-start;
+    padding-left: 100px;
+    font-size: 80px;
+}
+.be{
+     color: var(--primary-blue);
+    align-self: flex-start;
+    padding-left: 400px;
+    font-size: 80px;   
+}
+.st{
+       color:black;
+    align-self: flex-end;
+    padding-right: 300px;
+    font-size: 80px;   
+}
+.trr{
+    position: absolute;
+    height: 100px;
 }
 
 /* Secondary panel styles (example for cards area) */
