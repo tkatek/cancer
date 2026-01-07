@@ -912,19 +912,24 @@ position: relative;
 
 /* Secondary panel styles (example for cards area) */
 .crds1{
-   min-height: 60vh;
+  height: 60vh;
    width: 100%;
-   
-   background: #b03d3d;
-   /* padding: 20px; */
-   /* box-sizing: border-box; */
+   background: #f5f7fa; /* lighter background for contrast with cards */
+   /* padding: 40px 20px; */
+   box-sizing: border-box;
    display: flex;
    justify-content: center;
-   align-items: center;
+   align-items:end;
+ /* allow multiple cards per row */
 }
+
+/* Leave child sizing to your CSS so you can style freely. */
 .clothes{
-    height: 80%;
-    width: 30%;
-    background-color: rgb(113, 25, 255);
     box-sizing: border-box;
+    background-color: red;
+    height: 80%;
+    width: 22%;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    /* Add your own width/height/background here */
 }
