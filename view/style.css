@@ -995,6 +995,7 @@ position: relative;
 .contact{
     height: 100vh;
         background-color: rgb(220, 236, 245);
+    display: flex;
 
 }
 .tlp{
@@ -1049,3 +1050,99 @@ box-shadow: #2222223d 2px 2px 4px;
     justify-content: center;
     align-items: center;
 } */
+ .llft{
+    height: 100%;
+    width: 50%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    /* gap: 20px; */
+ }
+ .llft h1{
+    font-size: 80px;
+    color: black;
+    padding-left: 50px;
+    /* margin-bottom: 20px; */
+ }
+ .llft p{
+    font-size: 20px;
+    color: rgb(68, 68, 68);
+    text-align: center;
+    /* width: 80%; */
+    text-align: start;
+    /* text-transform: uppercase; */
+ }
+ .llft span{
+    font-size: 100px;
+    color: rgb(7, 28, 123);
+    /* margin-top: 15px; */
+ }
+ .llft h3{
+    font-size: 30px;
+    color: black;
+    margin-top: 15px;
+        text-transform: uppercase;
+
+ }
+ .rright{
+    height: 100%;
+    width: 50%;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .ll1{
+    height: 60%;
+    width: 100%;
+    /* background-color: red; */
+    padding-left: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+ }
+ .ll2{
+    height: 40%;
+    width: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 50px;
+    font-size: 20px;
+ }
+ .cnmain{
+    height: 80%;
+    width: 70%;
+    background-color: white;
+    /* border-radius: 20px; */
+    box-shadow: #2222223d 2px 2px 4px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+
+ }
+    .cnmain form{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        background-color: red;
+    }
+    .inp1{
+        height: 40px;
+        width: 80%;
+        padding-left: 10px;
+        border: none;
+        outline: none;
+    }
+
