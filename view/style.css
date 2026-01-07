@@ -931,6 +931,7 @@ position: relative;
     height: 90%;
     width: 22%;
     border-radius: 20px;
+    box-shadow: #2222223d 2px 2px 4px;
     /* Add your own width/height/background here */
 }
 .financial{
@@ -939,6 +940,8 @@ position: relative;
     height: 100%;
     width: 22%;
     border-radius: 20px; 
+        box-shadow: #2222223d 2px 2px 4px;
+
 }
 .physical{
    box-sizing: border-box;
@@ -946,6 +949,48 @@ position: relative;
     height: 90%;
     width: 22%;
     border-radius: 20px;  
+        box-shadow: #2222223d 2px 2px 4px;
+
+}
+
+/* Hover & focus animations for donate cards */
+.crds1 > .clothes,
+.crds1 > .financial,
+.crds1 > .physical {
+    transition: transform 280ms cubic-bezier(.16,.84,.34,1), box-shadow 280ms;
+    will-change: transform, box-shadow;
+}
+
+.crds1 > .clothes:hover,
+.crds1 > .financial:hover,
+.crds1 > .physical:hover,
+.crds1 > .clothes:focus-within,
+.crds1 > .financial:focus-within,
+.crds1 > .physical:focus-within {
+    transform: translateY(-10px) scale(1.025);
+    box-shadow: 0 16px 36px rgba(0,0,0,0.14);
+    z-index: 5;
+}
+
+.crds1 .tlp img { transition: transform 350ms ease; }
+.crds1 > div:hover .tlp img,
+.crds1 > div:focus-within .tlp img { transform: scale(1.06); }
+
+/* Respect user preference for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .crds1 > .clothes, .crds1 > .financial, .crds1 > .physical,
+    .crds1 .tlp img {
+        transition: none !important;
+        transform: none !important;
+    }
+}
+
+/* Disable hover transforms on touch devices */
+@media (hover: none) {
+    .crds1 > .clothes, .crds1 > .financial, .crds1 > .physical {
+        transition: none;
+    }
+    .crds1 .tlp img { transition: none; }
 }
 .contact{
     height: 100vh;
@@ -955,7 +1000,6 @@ position: relative;
 .tlp{
     height: 50%;
     width: 100%;
-    background-color: red;
     border-radius: 20px 20px 0px 0px;
     overflow: hidden;
 }
@@ -967,6 +1011,41 @@ position: relative;
 .ccp{
       height: 50%;
     width: 100%;
-    background-color: rgb(0, 255, 64); 
     border-radius: 0px 0px 20px 20px;
+    font-family: Outfit;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    flex-direction: column;
+
 }
+.ccp h1{
+    font-size: 25px;
+    padding-left: 10px;
+}
+.ccp p{
+    font-size: 15px;
+    padding-left: 10px;
+}
+.ccp button{
+    padding: 10px 40px;
+    color: white;
+    background-color:rgb(66, 153, 204);
+        font-family: Barlow;
+text-transform: uppercase;
+outline: none;
+border: none;
+border-radius: 30px;
+font-size: 16px;
+cursor: pointer;
+margin-left: 10px;
+box-shadow: #2222223d 2px 2px 4px;
+}
+/* .footer{
+    height: 80px;
+    width: 100%;
+    background-color: rgb(20, 64, 90);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
