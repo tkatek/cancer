@@ -3,26 +3,43 @@ document.addEventListener('DOMContentLoaded', () => {
         const path = document.querySelector('#dashed-path');
         const footerNote = document.querySelector('.footer-note');
 
+        // Initialize dashed path safely based on its actual length
+        let pathAnimated = false;
+        if (path && typeof path.getTotalLength === 'function') {
+            const len = path.getTotalLength();
+            path.style.strokeDasharray = len;
+            path.style.strokeDashoffset = len;
+            path.style.transition = 'stroke-dashoffset 4s ease-out';
+            path.style.pointerEvents = 'none';
+        }
+
         const observerOptions = {
             threshold: 0.3
         };
 
-        const observer = new IntersectionObserver((entries) => {
+        const observer = new IntersectionObserver((entries, obs) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('is-visible');
 
-                    // تفعيل رسم الخط عند ظهور أول بطاقة
-                    if (entry.target.classList.contains('card-1')) {
+                    // draw the path once when first card becomes visible
+                    if (!pathAnimated && entry.target.classList.contains('card-1') && path) {
                         path.style.strokeDashoffset = '0';
+                        pathAnimated = true;
                     }
                     
-                    // إظهار نص التذييل في النهاية
-                    if (entry.target.classList.contains('card-4')) {
+                    // show footer note when last card visible
+                    if (entry.target.classList.contains('card-4') && footerNote) {
                         footerNote.classList.add('is-visible');
                     }
                 }
             });
+
+            // disconnect observer once all cards are visible to reduce work
+            const allVisible = Array.from(cards).every(c => c.classList.contains('is-visible'));
+            if (allVisible) {
+                obs.disconnect();
+            }
         }, observerOptions);
 
         cards.forEach(card => observer.observe(card));
