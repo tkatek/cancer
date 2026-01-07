@@ -540,7 +540,11 @@ position: relative;
         flex-direction: column;
        }
        .about{
-        height: 100vh;
+        position: relative;
+        /* Let content determine the height so sections below remain visible */
+        height: auto;
+        overflow: visible;
+        padding: 40px 0;
        }
        .sgtop{
         height: 50%;
@@ -641,6 +645,7 @@ border-radius: 50%;
  }
 
 
+
  :root {
             --primary-blue: #49a2d1; 
             --dark-blue: #1a3a4a;
@@ -657,10 +662,9 @@ border-radius: 50%;
         } */
 
         .process-section {
-            padding: 100px 20px;
+            padding: 60px 20px;
             max-width: 1200px;
             margin: 0 auto;
-            position: relative;
         }
 
         /* رأس القسم */
@@ -701,19 +705,19 @@ border-radius: 50%;
             position: relative;
             display: flex;
             flex-direction: column;
-            gap: 30px;
-            min-height: 1100px;
+            gap: 15px;
+            min-height: 0;
+            height: auto; /* let cards stack naturally */
         }
 
         /* SVG الخط المتقطع */
         .svg-container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 0;
-            pointer-events: none;
+      position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* سيأخذ طول الـ wrapper الجديد تلقائياً */
+    z-index: 0;
         }
 
         #dashed-path {
@@ -788,6 +792,9 @@ border-radius: 50%;
         }
 
         .footer-note.is-visible { opacity: 1; }
+         /* .donait{
+    height: 200vh;
+        } */
 
         /* موبايل */
         @media (max-width: 768px) {
@@ -796,5 +803,13 @@ border-radius: 50%;
             .main-title { font-size: 30px; }
         }
 
+.donait{
+    position: relative;
+    display: block; /* لضمان أنه يأخذ مساحته الخاصة */
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background-color: #a52a2a;
+    z-index: 10;
+}
 
- 
