@@ -849,7 +849,7 @@ border-radius: 50%;
     width: 100%;
     /* Allow content to determine the height, but keep a comfortable minimum */
     min-height: 100vh;
-    background-color: beige;
+    background-color: rgb(220, 236, 245);
     z-index: 10;
     /* padding: 40px 20px; */
     box-sizing: border-box;
@@ -896,18 +896,35 @@ position: relative;
        color:black;
     align-self: flex-end;
     padding-right: 300px;
-    font-size: 80px;   
+    font-size: 80px; 
+    z-index: 5;  
 }
 .trr{
     position: absolute;
     height: 100px;
+}
+.trr1{
+    position: absolute;
+    height: 200px;
+    right: 250px;
+    bottom: 20px;
 }
 
 /* Secondary panel styles (example for cards area) */
 .crds1{
    min-height: 60vh;
    width: 100%;
-   background: #fff3f3;
-   padding: 20px;
-   box-sizing: border-box;
+   
+   background: #b03d3d;
+   /* padding: 20px; */
+   /* box-sizing: border-box; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.clothes{
+    height: 80%;
+    width: 30%;
+    background-color: rgb(113, 25, 255);
+    box-sizing: border-box;
 }
