@@ -47,4 +47,31 @@ document.addEventListener('DOMContentLoaded', () => {
         }, observerOptions);
 
         cards.forEach(card => observer.observe(card));
+
+        // Simple newsletter form handler for footer
+        const footerForm = document.getElementById('footer-newsletter');
+        if (footerForm) {
+            const success = footerForm.querySelector('.newsletter-success');
+            footerForm.addEventListener('submit', e => {
+                e.preventDefault();
+                const email = footerForm.querySelector('input[name="email"]') || footerForm.querySelector('input[type="email"]');
+                if (!email || !email.value) {
+                    email && email.focus();
+                    return;
+                }
+                footerForm.querySelector('button').disabled = true;
+                // Minimal client-side validation
+                const validEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value);
+                if (!validEmail) {
+                    email.focus();
+                    footerForm.querySelector('button').disabled = false;
+                    return;
+                }
+                setTimeout(() => {
+                    footerForm.reset();
+                    if (success) { success.hidden = false; }
+                    footerForm.querySelector('button').disabled = false;
+                }, 700);
+            });
+        }
     });
