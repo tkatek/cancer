@@ -138,4 +138,98 @@ document.addEventListener('DOMContentLoaded', () => {
                 }, 700);
             });
         }
+
+        // Mobile bottom navigation (navphone) interactions — smooth viewport-center scroll-spy
+        (function(){
+            const nav = document.querySelector('.navphone');
+            const navItems = nav ? Array.from(nav.querySelectorAll('.nav-item')) : [];
+            if (!nav || !navItems.length) return;
+
+            // Ensure contact section has id for scrolling
+            const contactSection = document.querySelector('.contact');
+            if (contactSection && !contactSection.id) contactSection.id = 'contact';
+
+            // Map nav items to their target sections
+            const itemMap = navItems.map(item => {
+                const selector = item.dataset.target;
+                const el = selector ? document.querySelector(selector) : null;
+                return { item, el };
+            }).filter(x => x.el);
+
+            // Helper to activate a nav item
+            function activate(item, opts = {}){
+                if (!item) return;
+                navItems.forEach(i => { i.classList.remove('active'); i.removeAttribute('aria-current'); });
+                item.classList.add('active');
+                item.setAttribute('aria-current','page');
+
+                if (opts.scroll !== false) {
+                    const target = item.dataset.target;
+                    if (target) {
+                        try{
+                            const el = document.querySelector(target);
+                            if (el) el.scrollIntoView({behavior:'smooth', block:'center'});
+                        }catch(e){ /* ignore */ }
+                    }
+                }
+            }
+
+            // Click / keyboard activation
+            navItems.forEach(item => {
+                item.addEventListener('click', () => activate(item));
+                item.addEventListener('keydown', e => {
+                    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); activate(item); }
+                });
+            });
+
+            // Activate the first item by default without scrolling
+            activate(navItems[0], { scroll: false });
+
+            // Viewport-center scroll handler — uses rAF for smoothness and stability
+            let ticking = false;
+            let currentActive = nav.querySelector('.nav-item.active') || navItems[0];
+
+            function onScroll() {
+                ticking = false;
+
+                const viewportCenter = window.scrollY + window.innerHeight / 2;
+
+                // Find section whose center is closest to viewport center
+                let best = null;
+                let bestDist = Infinity;
+                for (const {item, el} of itemMap) {
+                    const rect = el.getBoundingClientRect();
+                    const elCenter = window.scrollY + rect.top + rect.height/2;
+                    const dist = Math.abs(elCenter - viewportCenter);
+                    if (dist < bestDist) {
+                        bestDist = dist;
+                        best = { item, el, dist, rect };
+                    }
+                }
+
+                if (!best) return;
+
+                // Only switch when the viewport center is reasonably inside the section (hysteresis)
+                const sectionHalfHeight = best.rect.height / 2;
+                const MAX_ACCEPT_DISTANCE = Math.min(window.innerHeight * 0.45, sectionHalfHeight);
+
+                if (best.dist <= MAX_ACCEPT_DISTANCE && best.item !== currentActive) {
+                    activate(best.item, { scroll: false });
+                    currentActive = best.item;
+                }
+            }
+
+            function requestTick() {
+                if (!ticking) {
+                    ticking = true;
+                    requestAnimationFrame(onScroll);
+                }
+            }
+
+            window.addEventListener('scroll', requestTick, { passive: true });
+            window.addEventListener('resize', requestTick);
+
+            // Run once on load to set correct active state
+            requestTick();
+        })();
     });
