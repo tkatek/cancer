@@ -875,6 +875,24 @@ border-radius: 50%;
     align-items: center;
     flex-direction: column;
 }
+.suright{
+    height: 100%;
+    width: 50%;
+    /* background-color: red; */
+        border-right: solid 1px white;
+display: flex;
+justify-content: center;
+align-items: start;
+flex-direction: column;
+padding-left: 50px;
+position: relative;
+
+}
+.dots{
+    position: absolute;
+    bottom: -160%;
+    left: 0;
+}
 
 /* Ensure direct children behave predictably (avoid percent-height issues) */
 .donait > * {
@@ -884,10 +902,10 @@ border-radius: 50%;
 
 /* Use viewport-based min-height on panels so they render reliably */
 .sudon1{
-   min-height: 20vh;
+   height: 20vh;
    width: 100%;
-   /* background: rgba(255, 0, 0, 0); */
-   padding: 20px;
+   /* background: rgba(206, 25, 25, 0.947); */
+   /* padding: 20px; */
    box-sizing: border-box;
    text-align: center;
 display: flex;
@@ -902,22 +920,22 @@ position: relative;
 
 }
 .in{
-    color:black;
-    align-self: flex-start;
-    padding-left: 100px;
-    font-size: 30px;
+    color:white;
+    /* align-self: flex-start; */
+    /* padding-left: 100px; */
+    font-size: 40px;
 }
 .be{
      color: var(--primary-blue);
-    align-self: flex-start;
-    padding-left: 400px;
-    font-size: 30px;   
+    /* align-self: flex-start;
+    padding-left: 400px; */
+    font-size: 40px;   
 }
 .st{
-       color:black;
-    align-self: flex-end;
-    padding-right: 300px;
-    font-size: 30px; 
+       color:white;
+    /* align-self: flex-end;
+    padding-right: 300px; */
+    font-size: 40px; 
     z-index: 5;  
 }
 .trr{
