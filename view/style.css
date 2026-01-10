@@ -1569,6 +1569,79 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
        border:#0052af 2px solid;
      }
 
+
+     .sudon1{
+        flex-direction: column;
+        height: 100%;
+     }
+     .suright{
+        width: 90%;
+        padding-left: 0px;
+        border: none;
+        
+     }
+     .donait{
+        height: 100%;
+     }
+    
+.sudlft{
+    width: 100%;
+}
+.sudlft h1{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.sudlft img{
+    display: none;
+}
+.nums{
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.nums div{
+    /* background-color: red; */
+    width: 80%;
+    /* height: 30%; */
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+
+    border-bottom: solid 1px white;
+    border-right: none;
+}
+
+.btnhero1{
+    border-radius: 0px;
+}
+.btnhero{
+    border-radius: 0px;
+
+}
+.sidebtn{
+      border-radius: 0px;
+  
+}
+.prs p{
+          border-radius: 0px;
+
+}
+
+
+
+}
+
+
+.btnhero1{
+    border-radius: 0px;
+}
+.btnhero{
+    border-radius: 0px;
+
+}
+.sidebtn{
+      border-radius: 0px;
+  
 }
 /* .nums{
     height: 20vh;
