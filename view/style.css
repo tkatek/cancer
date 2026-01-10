@@ -888,6 +888,39 @@ padding-left: 50px;
 position: relative;
 
 }
+.sudlft{
+
+ height: 100%;
+    width: 50%;
+    /* background-color: red; */
+        /* border-right: solid 1px white; */
+display: flex;
+justify-content: center;
+align-items: start;
+flex-direction: column;
+/* padding-left: 50px; */
+position: relative;
+font-size: 50px;
+
+}
+.sudlft h1{
+    font-size: 20px;
+text-align: start;
+padding-left: 10px;
+}
+.sudlft span{
+        font-size: 30px;
+        background-color: var(--primary-blue);
+
+}
+
+.arrr{
+    position: absolute;
+    height: 70px;
+    right: 50px;
+    bottom: 0;
+    rotate: -30deg;
+}
 .dots{
     position: absolute;
     bottom: -160%;
@@ -911,7 +944,7 @@ position: relative;
 display: flex;
 justify-content: center;
 align-content: center;
-flex-direction: column;
+/* flex-direction: column; */
 font-family: Outfit;
 color: white;
 /* font-weight: 500; */
@@ -1112,11 +1145,19 @@ position: relative;
 text-transform: uppercase;
 outline: none;
 border: none;
-border-radius: 30px;
+/* border-radius: 30px; */
 font-size: 16px;
 cursor: pointer;
 margin-left: 10px;
-box-shadow: #2222223d 2px 2px 4px;
+box-shadow: #0808089f 2px 2px 4px;
+        transition: 0.5s;
+
+}
+.ccp button:hover{
+    background-color: rgb(33, 115, 182);
+        padding: 10px 50px;
+        transition: 0.5s;
+
 }
 /* .footer{
     height: 80px;
