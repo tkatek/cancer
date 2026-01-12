@@ -139,6 +139,40 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
+        // Mobile-only reveal animations (phones): opacity + slide with stagger
+        (function(){
+            // only enable on phone widths
+            if (!window.matchMedia || !window.matchMedia('(max-width:600px)').matches) return;
+            if (window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+                // make all targets visible immediately
+                const immediate = ['.subtitel', '.one .side', '.one .side1', '.sgin .sgtop', '.sgin .sgbot', '.sudon1 .suright', '.sudon1 .sudlft', '.crds1 > div', '.nums', '.contact .ll1', '.contact .ll2', '.contact .rright'];
+                immediate.forEach(sel => document.querySelectorAll(sel).forEach(el => el.classList.add('reveal-visible')));
+                return;
+            }
+
+            const selectors = ['.subtitel', '.one .side', '.one .side1', '.sgin .sgtop', '.sgin .sgbot', '.sudon1 .suright', '.sudon1 .sudlft', '.crds1 > div', '.nums', '.contact .ll1', '.contact .ll2', '.contact .rright'];
+            let nodes = [];
+            selectors.forEach(s => document.querySelectorAll(s).forEach(el => nodes.push(el)));
+            if (nodes.length === 0) return;
+
+            nodes.forEach((el, i) => {
+                el.classList.add('reveal');
+                el.style.setProperty('--reveal-delay', `${i * 60}ms`);
+            });
+
+            const obs = new IntersectionObserver((entries, o) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const el = entry.target;
+                        el.classList.add('reveal-visible');
+                        o.unobserve(el);
+                    }
+                });
+            }, { threshold: 0.18, rootMargin: '0px 0px -8% 0px' });
+
+            nodes.forEach(n => obs.observe(n));
+        })();
+
         // Mobile bottom navigation (navphone) interactions — smooth viewport-center scroll-spy
         (function(){
             const nav = document.querySelector('.navphone');
